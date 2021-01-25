@@ -5,7 +5,7 @@ import time
 def setup():
 	LCD1602.init(0x27, 1)	# init(slave address, background light)
 	LCD1602.write(0, 0, 'Hello Meredith')
-	LCD1602.write(1, 1, 'How are you?')
+	LCD1602.write(4, 1, 'how are you?') # col then row
 	time.sleep(10)
 	destroy()
 
