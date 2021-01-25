@@ -4,9 +4,10 @@ import time
 
 def setup():
 	LCD1602.init(0x27, 1)	# init(slave address, background light)
-	LCD1602.write(0, 0, 'Greetings!!')
-	LCD1602.write(1, 1, 'from SunFounder')
-	time.sleep(2)
+	LCD1602.write(0, 0, 'Hello Meredith')
+	LCD1602.write(1, 1, 'How are you?')
+	time.sleep(10)
+	destroy()
 
 def destroy():
 	LCD1602.clear()
